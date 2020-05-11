@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title th:text="${lista}">Insert title here</title>
+</head>
+<body>
+	
+	<h2 th:text="${lista}"></h2>
+	<div class="card-body">
+	<table>
+		<thead>
+			<tr>
+				<th>#</th>
+				<th>Nro</th>
+				<th>Nombre</th>
+				<th>Estado</th>
+				<th>Fecha Actividad</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr th:each="t : ${tareas}" >
+				<td th:text="${t.numero}"></td>
+				<td th:text="${t.nombre}"></td>
+				<td th:text="${t.estado}"></td>
+				<td th:text="${#temporals.format(t.fecha,'dd-MM-yyyy')}"></td>
+			</tr>
+		</tbody>
+	</table>
+	</div>
+</body>
+</html>
