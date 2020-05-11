@@ -17,7 +17,7 @@ public class TareaController {
 
 	//Para que nuetra clase se vuelva u controlador:
 	
-	public class TareasController {
+	
 		
 	@Autowired
 	ITareaService tareaService;
@@ -35,7 +35,7 @@ public class TareaController {
 			
 		}
 		
-	}
+	
 	
 	
 }
